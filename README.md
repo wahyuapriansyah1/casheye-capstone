@@ -6,13 +6,27 @@ Casheye adalah aplikasi berbasis web yang membantu tunanetra mengenali uang meng
 ---
 
 ## Kebutuhan Sistem
-- **PHP**: 8.1 atau lebih baru
-- **Composer**: 2.x
+- **PHP**: 8.2.28 ([Download PHP](https://windows.php.net/download/))
+- **Composer**: 2.x ([Download Composer](https://getcomposer.org/download/))
+- **Web Server**: XAMPP ([Download XAMPP](https://www.apachefriends.org/download.html)) atau Laragon ([Download Laragon](https://laragon.org/download/))
 - **Node.js**: 18.x (jika ingin build asset dengan Vite, opsional)
 - **NPM**: 9.x (opsional)
 - **Laravel**: 10.x
 - **Web Browser**: Chrome/Edge/Firefox (disarankan Chrome untuk fitur PWA)
 - **OS**: Windows, Linux, atau MacOS
+
+---
+
+## Persiapan Sebelum Clone
+1. **Install Web Server**
+   - Pilih salah satu: XAMPP atau Laragon
+   - Download dan install dari link di atas
+   - Pastikan Apache dan MySQL berjalan (jika butuh database)
+2. **Install PHP 8.2.28**
+   - Jika pakai XAMPP/Laragon biasanya sudah include PHP, cek versi dengan `php -v`
+   - Jika perlu update, download dari link di atas
+3. **Install Composer**
+   - Download dan install Composer dari link di atas
 
 ---
 
@@ -68,9 +82,10 @@ Casheye adalah aplikasi berbasis web yang membantu tunanetra mengenali uang meng
 ## Tools yang Digunakan
 - Laravel 10.x
 - Bootstrap 5.3.x
-- PHP 8.1+
+- PHP 8.2.28
 - Composer 2.x
 - (Opsional) Node.js 18.x & NPM 9.x
+- XAMPP/Laragon (webserver)
 
 ---
 
@@ -78,6 +93,11 @@ Casheye adalah aplikasi berbasis web yang membantu tunanetra mengenali uang meng
 - Untuk fitur kamera, gunakan browser yang mendukung akses kamera (Chrome/Edge/Firefox).
 - Untuk update icon PWA, ganti file di `public/img/logo.png` dan update `manifest.json` jika perlu.
 - Jika ada error permission kamera di HP, pastikan sudah memberi izin akses kamera di browser.
+
+---
+
+## Kontribusi
+Pull request dan issue sangat diterima!
 
 ---
 
