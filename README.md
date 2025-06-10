@@ -1,3 +1,86 @@
+# Casheye - Laravel PWA Uang Tunanetra
+
+## Deskripsi
+Casheye adalah aplikasi berbasis web yang membantu tunanetra mengenali uang menggunakan kamera. Aplikasi ini sudah mendukung Progressive Web App (PWA), sehingga bisa di-install di HP/PC seperti aplikasi native.
+
+---
+
+## Kebutuhan Sistem
+- **PHP**: 8.1 atau lebih baru
+- **Composer**: 2.x
+- **Node.js**: 18.x (jika ingin build asset dengan Vite, opsional)
+- **NPM**: 9.x (opsional)
+- **Laravel**: 10.x
+- **Web Browser**: Chrome/Edge/Firefox (disarankan Chrome untuk fitur PWA)
+- **OS**: Windows, Linux, atau MacOS
+
+---
+
+## Cara Instalasi
+1. **Clone repository**
+   ```bash
+   git clone <repo-url>
+   cd casheye-capstone
+   ```
+2. **Install dependency Laravel**
+   ```bash
+   composer install
+   ```
+3. **Copy file environment**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+4. **Jalankan server Laravel**
+   ```bash
+   php artisan serve
+   ```
+   Atau gunakan Laragon/XAMPP, pastikan root folder ke `public/`.
+
+5. **(Opsional) Build asset frontend**
+   Jika ingin mengubah asset JS/CSS dari `resources/`, jalankan:
+   ```bash
+   npm install
+   npm run build
+   ```
+   (Default asset sudah ada di `public/`, jadi langkah ini bisa dilewati jika tidak mengubah frontend)
+
+6. **Akses aplikasi**
+   Buka browser ke `http://localhost:8000` atau sesuai port yang muncul.
+
+7. **Install sebagai PWA**
+   - Buka aplikasi di Chrome/Edge Android/PC
+   - Klik ikon install di address bar atau menu browser
+   - Ikuti instruksi untuk menambahkan ke Home Screen
+
+---
+
+## Struktur Penting
+- `public/manifest.json` : Konfigurasi PWA
+- `public/service-worker.js` : Service worker PWA
+- `public/js/` : File JS frontend
+- `public/css/` : File CSS frontend
+- `resources/views/` : File Blade (HTML)
+- `routes/web.php` : Routing utama
+
+---
+
+## Tools yang Digunakan
+- Laravel 10.x
+- Bootstrap 5.3.x
+- PHP 8.1+
+- Composer 2.x
+- (Opsional) Node.js 18.x & NPM 9.x
+
+---
+
+## Catatan
+- Untuk fitur kamera, gunakan browser yang mendukung akses kamera (Chrome/Edge/Firefox).
+- Untuk update icon PWA, ganti file di `public/img/logo.png` dan update `manifest.json` jika perlu.
+- Jika ada error permission kamera di HP, pastikan sudah memberi izin akses kamera di browser.
+
+---
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
