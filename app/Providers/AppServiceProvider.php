@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\URL; // <<< PASTIKAN BARIS INI ADA DI ATAS
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +20,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // <<< TAMBAHKAN KODE INI DI SINI >>>
+        if (config('app.env') === 'production') { // Pastikan hanya berlaku di production
+            URL::forceScheme('https');
+        }
+        // <<< AKHIR KODE TAMBAHAN >>>
     }
 }
