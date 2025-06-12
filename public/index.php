@@ -2,13 +2,6 @@
 
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\URL; // <<< TAMBAHKAN BARIS INI!
-
-// <<< TAMBAHKAN KODE INI DI SINI, SETELAH SEMUA 'use' STATEMENTS >>>
-if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
-    URL::forceScheme('https');
-}
-// <<< AKHIR KODE TAMBAHAN >>>
 
 define('LARAVEL_START', microtime(true));
 
