@@ -29,7 +29,7 @@ class ScanUangController extends Controller
 
         // --- GANTI DENGAN URL NGROK KAMU SAAT INI ---
         // Contoh: $mlApiUrl = 'https://e8f5-34-57-163-176.ngrok-free.app/detect/';
-        $mlApiUrl = 'https://12c3-35-227-111-17.ngrok-free.app/detect/'; 
+        $mlApiUrl = 'https://2d69-35-232-129-83.ngrok-free.app/detect/'; 
         // --- END GANTI ---
 
         try {

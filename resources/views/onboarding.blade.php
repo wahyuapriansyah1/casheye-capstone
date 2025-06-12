@@ -13,7 +13,7 @@
 <body class="d-flex justify-content-center align-items-center vh-100 bg-light">
 
   <div class="text-center px-4">
-    <img src="{{ asset ('img/logo.png') }}" alt="Casheye Logo" class="logo-onboarding mb-4">
+    <img src="{{ asset('img/LogoCasheye.png') }}" alt="Casheye Logo" class="logo-onboarding mb-4">
 
     <h5 class="fw-semibold">Selamat Datang di Casheye!</h5>
     <p class="mb-4">

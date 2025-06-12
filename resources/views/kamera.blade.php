@@ -14,7 +14,7 @@
 <body class="bg-light d-flex justify-content-center align-items-center vh-100">
 
   <div class="container text-center">
-    <img src="{{ asset ('img/logo.png') }}" alt="Casheye Logo" class="logo-camera mb-3">
+    <img src="{{ asset('img/LogoCasheye.png') }}" alt="Casheye Logo" class="logo-camera mb-3">
     
     <div class="camera-frame-responsive position-relative mx-auto">
       <canvas id="cameraCanvas"></canvas>
